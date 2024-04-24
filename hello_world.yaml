@@ -1,7 +1,7 @@
 ---
 - name: Hello World
   gather_facts: false
-  hosts: Ansible
+  hosts: all
   tasks:
     - name: Say hello
       debug:
