@@ -1,4 +1,8 @@
 ---
-  -  name: Hello World
-     msg: 'Hello from Avoca Beach !!!'
-     
+- name: Hello World
+  gather_facts: false
+  hosts: Ansible
+  tasks:
+    - name: Say hello
+      debug:
+        msg: "Hello from Avoca !"
